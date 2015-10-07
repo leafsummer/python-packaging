@@ -1,17 +1,18 @@
-How To Package Your Python Code
+如何打包你的Python代码
 ===============================
 
-This tutorial aims to put forth an opinionated and specific pattern to make trouble-free packages for community use. It doesn't describe the *only* way of doing things, merely one specific approach that works well.
+这个教程目标是为了更好地描述打包的过程，让大家都能学会如何打包Python代码。
+但是打包并非**仅仅只有**一种方式，这个教程仅仅只描述了一种可行的打包方式。
 
-In particular, packages should make it easy:
+打包之后，你的代码有如下好处:
 
-* To install with ``pip`` or ``easy_install``.
-* To specify as a dependency for another package.
-* For other users to download and run tests.
-* For other users to work on and have immediate familiary with the basic directory strucuture.
-* To add and distribute documentation.
+* 可以使用 ``pip`` or ``easy_install`` 安装.
+* 可以最为其他包的依赖关系.
+* 其他用户更加方便地使用和测试你的代码.
+* 其他用户可以更方便的理解你的代码，因为你的代码是按照打包需要的格式来组织的.
+* 更加方便添加和分发文档.
 
-We'll walk through the basic steps of building up a contrived package **funniest** to support these things.
+我们一步一步地，制作一个简单的python包**funniest**，你就会发现我所说非虚。
 
 .. toctree::
    :maxdepth: 1
@@ -27,12 +28,12 @@ We'll walk through the basic steps of building up a contrived package **funniest
 
 .. note::
 
-   At this time, this documentation focuses on Python 2.x only, and may not be *as* applicable to packages targeted to Python 3.x.
+   目前，这份教程仅仅针对Python 2.x，可能在Python 3.x 上并不适用
 
 .. seealso::
 
-    `Setuptools Documentation <http://peak.telecommunity.com/DevCenter/setuptools>`_
-        Core setuptools documentation and API reference.
+    `Setuptools Documentation <http://pythonhosted.org/setuptools/>`_
+        setuptools documentation.
 
-    `Hitchhiker's Guide to Packaging <http://guide.python-distribute.org>`_
-        Similar guidelines and a tutorial for the use of Distribute, a fork of Setuptools which will be the future of Python packaging in Python 3.x and beyond.
+    `Python Packaging User Guide <http://packaging.python.org>`_
+        "Python Packaging User Guide" (PyPUG) 目标在于为Python包如何打包和安装，提供权威的指南.

@@ -1,7 +1,8 @@
-Let There Be Tests
+添加测试代码
 ==================
 
-The **funniest** package needs some tests. These should be placed in a submodule of ``funniest.`` so that they can be imported, but won't pollute the global namespace.::
+**funniest** 需要一些测试工作. 这些代码都应该放在``funniest.``子模块的目录下.
+这样的结构，这些测试代码既可以导入, 又不会污染全局的命名空间.::
 
     funniest/
         funniest/
@@ -12,7 +13,8 @@ The **funniest** package needs some tests. These should be placed in a submodule
         setup.py
         ...
 
-The ``test_joke.py`` file is our first test file. Although it's overkill for now, we'll use a ``unittest.TestCase`` subclass to provide infrastructure for later development.::
+``test_joke.py`` 是我们第一个测试文件.
+虽然现在有一些小题大做, 但是这是为了演示代码是如何组织的, 所以我们创建了``unittest.TestCase`` 的一个子类::
 
     from unittest import TestCase
 
@@ -23,11 +25,13 @@ The ``test_joke.py`` file is our first test file. Although it's overkill for now
             s = funniest.joke()
             self.assertTrue(isinstance(s, basestring))
 
+运行这些测试用例最好的方式是使用`Nose <https://nose.readthedocs.org/en/latest/>`_ (特别是你不知道用什么的时候)
 The best way to get these tests going (particularly if you're not sure what to use) is `Nose <https://nose.readthedocs.org/en/latest/>`_. With those files added, it's just a matter of running this from the root of the repository::
 
     $ pip install nose
     $ nosetests
 
+为了把测试工作集成到``setup.py``中, 我们需要添加一些参数, 这些参数会确保运行测试用例的时候Nose会被安装.
 To integrate this with our ``setup.py``, and ensure that Nose is installed when we run the tests, we'll add a few lines to ``setup()``::
 
     setup(
@@ -36,8 +40,10 @@ To integrate this with our ``setup.py``, and ensure that Nose is installed when 
         tests_require=['nose'],
     )
 
+然后, 我们就可以这样运行测试::
 Then, to run tests, we can simply do::
 
     $ python setup.py test
 
+setuptools 将会安装nose和运行测试用例.
 Setuptools will take care of installing nose and running the test suite.

@@ -1,15 +1,20 @@
-Command Line Scripts
+命令行脚本
 ====================
 
+很多Python包都有命令行工具. 借助setuptools/PyPI你可以非常方便地附加一下有用的命令行工具到你发布的当中, 或者单纯发布使用Python编写
+的命令行工具.
 Many Python packages include command line tools. This is useful for distributing support tools which are associated with a library, or just taking advantage of the setuptools / PyPI infrastructure to distribute a command line tool that happens to use Python.
 
+举个例子, 我们添加一个``funniest-joke`的可执行命令.
 For **funniest**, we'll add a ``funniest-joke`` command line tool.
 
+在``setuptools.setup()``中有两种方法``scripts``参数或是``console_scripts``入口.
 There are two mechanisms that ``setuptools.setup()`` provides to do this: the ``scripts`` keyword argument, and the ``console_scripts`` entry point.
 
-The ``scripts`` Keyword Argument
+``scripts`` 参数
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+第一种方法是把你的命令写在一个单独的文件中::
 The first approach is to write your script in a separate file, such as you might write a shell script.::
 
     funniest/
@@ -21,14 +26,14 @@ The first approach is to write your script in a separate file, such as you might
             funniest-joke
         ...
 
-The ``funniest-joke`` script just looks like this::
+``bin/funniest-joke`` 如下::
 
     #!/usr/bin/env python
 
     import funniest
     print funniest.joke()
 
-Then we can declare the script in ``setup()`` like this::
+在``setup()`` 添加::
 
     setup(
         ...
@@ -36,16 +41,19 @@ Then we can declare the script in ``setup()`` like this::
         ...
     )
 
+当我们安装这个包的时候, setuptools会把你的脚本复制到PATH路径下::
 When we install the package, setuptools will copy the script to our PATH and make it available for general use.::
 
     $ funniest-joke
 
+使用这种方法的好处是可以使用非Python的语言的编写, ``funniset-joke``可以是一个shell脚本或者其他的都可以.
 This has advantage of being generalizeable to non-python scripts, as well: ``funniset-joke`` could be a shell script, or something completely different.
 
 
-The ``console_scripts`` Entry Point
+``console_scripts`` 入口
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+第二种方法是使用
 The second approach is called an 'entry point'. Setuptools allows modules to register entrypoints which other packages can hook into to provide certain functionality. It also provides a few itself, including the ``console_scripts`` entry point.
 
 This allows Python *functions* (not scripts!) to be directly registered as command-line accessible tools.
