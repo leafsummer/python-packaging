@@ -5,9 +5,9 @@
 
 setuptools给我们提供了很方便的工具来说明依赖关系, 而且在安装我们的包的时候会自动安装依赖包.
 
-我们可以给 **funniest** joke 添加一些格式， 使用`Markdown <http://pypi.python.org/pypi/Markdown/>`_.
+我们可以给 **funniest** joke 添加一些格式， 使用 `Markdown <http://pypi.python.org/pypi/Markdown/>`_.
 
-``__init__.py``::
+``__init__.py`` ::
 
     from markdown import markdown
 
@@ -19,7 +19,7 @@ setuptools给我们提供了很方便的工具来说明依赖关系, 而且在�
                         u'It\'s HTML5.')
 
 
-现在我们的包依赖``markdown``这个包. 我们需要在``setup.py``中添加``install_requires``参数::
+现在我们的包依赖 ``markdown`` 这个包. 我们需要在 ``setup.py`` 中添加 ``install_requires`` 参数::
 
     from setuptools import setup
 
@@ -36,7 +36,7 @@ setuptools给我们提供了很方便的工具来说明依赖关系, 而且在�
           ],
           zip_safe=False)
 
-为了测试是否可行，我们可以试一试``python setup.py develop``::
+为了测试是否可行，我们可以试一试 ``python setup.py develop`` ::
 
     $ python setup.py develop
     running develop
@@ -60,13 +60,13 @@ setuptools给我们提供了很方便的工具来说明依赖关系, 而且在�
     Using /.../site-packages
     Finished processing dependencies for funniest==0.1
 
-当我们安装funniest包的时候, ``pip install funniest``也会同时安装``markdown``.
+当我们安装funniest包的时候, ``pip install funniest`` 也会同时安装 ``markdown`` .
 
 
 不在PyPI中的包
 ~~~~~~~~~~~~~~~~~~~~
 
-有时候, 你需要一些按照setuptools格式组织的安装包, 但是它们没有在PyPI发布. 在这种情况下, 你可以在``dependency_links``
+有时候, 你需要一些按照setuptools格式组织的安装包, 但是它们没有在PyPI发布. 在这种情况下, 你可以在 ``dependency_links``
 中填入下载的URL, 可能需要在URL中加一些其他信息, setuptools将根据URL找到和安装这些依赖包.
 
 举个例子, Github上的包可以按照下面的格式填写URL::

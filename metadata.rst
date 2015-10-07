@@ -28,13 +28,13 @@
           include_package_data=True,
           zip_safe=False)
 
-``classifiers``参数, 完整的分类列表在这里 http://pypi.python.org/pypi?%3Aaction=list_classifiers.
+``classifiers`` 参数, 完整的分类列表在这里 http://pypi.python.org/pypi?%3Aaction=list_classifiers.
 
 
 README / Long Description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-你可能希望添加一个README说明文件到你的包中, 而且也可以满足PyPI``long_description``的规范. 如果
+你可能希望添加一个README说明文件到你的包中, 而且也可以满足PyPI ``long_description`` 的规范. 如果
 这个文件使用reStructuredText语法, 将会有更丰富的格式.
 
 **funniest**, 添加两个文件::
@@ -46,7 +46,7 @@ README / Long Description
         README.rst
         MANIFEST.in
 
-``README.rst``::
+``README.rst`` ::
 
     Funniest
     --------
@@ -56,13 +56,13 @@ README / Long Description
         >>> import funniest
         >>> print funniest.joke()
 
-``MANIFEST.in``::
+``MANIFEST.in`` ::
 
     include README.rst
 
 这个文件是用来告诉setuptools打包的时候把README.rst添加进去, 否则的话只会打包包含Python代码的文件.
 
-接下来修改``setup.py``::
+接下来修改 ``setup.py`` ::
 
     from setuptools import setup
 

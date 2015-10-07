@@ -35,9 +35,9 @@ Python 模块或者包名应该遵守以下的规则:
             __init__.py
         setup.py
 
-最外层的目录是我们版本管理工具的根目录, 例如``funniest.git``. 子目录也叫``funniest``, 代表Python module.
+最外层的目录是我们版本管理工具的根目录, 例如 ``funniest.git`` . 子目录也叫 ``funniest`` , 代表Python module.
 
-为了更好理解, 我们把函数``joke()`` 放到 ``__init__.py``中::
+为了更好理解, 我们把函数 ``joke()`` 放到 ``__init__.py`` 中::
 
     def joke():
         return (u'How do you tell HTML from HTML5?'
@@ -46,7 +46,7 @@ Python 模块或者包名应该遵守以下的规则:
                 u'No?'
                 u'It\'s HTML5.')
 
-最主要的setup配置文件是``setup.py``, 应该包含一行代码调用``setuptools.setup()``,就像下面这样::
+最主要的setup配置文件是 ``setup.py`` , 应该包含一行代码调用 ``setuptools.setup()`` ,就像下面这样::
 
     from setuptools import setup
 
@@ -85,7 +85,7 @@ Python 模块或者包名应该遵守以下的规则:
 
 如果从未在PyPI上发布过东西, 你需要创建一个账号, 命令行向导会一步一步告诉你怎么做.
 
-注册之后你可以在PyPI看到这个包的页面**funniest**:
+注册之后你可以在PyPI看到这个包的页面 **funniest** :
 
 http://pypi.python.org/pypi/funniest/0.1
 
@@ -96,7 +96,7 @@ http://pypi.python.org/pypi/funniest/0.1
 
     $ python setup.py sdist
 
-这一步会在你的顶层目录下创建``dist/funniest-0.1.tar.gz``. 如果你有时间, 可以把这个文件拷贝到另一台主机上, 解压然后安装,
+这一步会在你的顶层目录下创建 ``dist/funniest-0.1.tar.gz`` . 如果你有时间, 可以把这个文件拷贝到另一台主机上, 解压然后安装,
 测试一下安装包.
 
 第三步上传到PyPI::
@@ -115,11 +115,11 @@ http://pypi.python.org/pypi/funniest/0.1
 安装这个包
 ~~~~~~~~~~~~~~~~~~~~~~
 
-上面的步骤完成之后, 其他用户可以直接用``easy_install``安装::
+上面的步骤完成之后, 其他用户可以直接用 ``easy_install`` 安装::
 
     easy_install funniest
 
-或者使用``pip``::
+或者使用 ``pip`` ::
 
     $ pip install funniest
 
@@ -131,7 +131,7 @@ http://pypi.python.org/pypi/funniest/0.1
 
 大部分时间我们的代码分散在多个文件当中,
 
-举个例子, 我们把函数移动到一个新的文件中``text``, 现在我们的目录结构是这样子的::
+举个例子, 我们把函数移动到一个新的文件中 ``text`` , 现在我们的目录结构是这样子的::
 
     funniest/
         funniest/
@@ -139,11 +139,11 @@ http://pypi.python.org/pypi/funniest/0.1
             text.py
         setup.py
 
-``__init__.py``::
+``__init__.py`` ::
 
     from .text import joke
 
-``text.py``::
+``text.py`` ::
 
     def joke():
         return (u'How do you tell HTML from HTML5?'
@@ -158,8 +158,9 @@ http://pypi.python.org/pypi/funniest/0.1
 忽略的文件 (.gitignore, etc)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-我们可能需要一个``.gitignore``或者是其他代码管理工具类似的文件, 因为创建包的过程中会产生一下中间文件, 我们并不想提交到代码仓库当中.
-下面是一个``.gitignore``的例子::
+我们可能需要一个 ``.gitignore`` 或者是其他代码管理工具类似的文件, 因为创建包的过程中会产生一下中间文件, 我们并不想提交到代码仓库当中.
+
+下面是一个 ``.gitignore`` 的例子::
 
     # Compiled python modules.
     *.pyc

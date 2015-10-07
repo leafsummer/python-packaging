@@ -1,6 +1,8 @@
 from markdown import markdown
 
 def joke():
-    return markdown(u'Wenn ist das Nunst\u00fcck git und Slotermeyer?'
-                    u'Ja! ... **Beiherhund** das Oder die Flipperwaldt '
-                    u'gersput.')
+    return markdown(u'How do you tell HTML from HTML5?'
+                    u'Try it out in **Internet Explorer**.'
+                    u'Does it work?'
+                    u'No?'
+                    u'It\'s HTML5.')
