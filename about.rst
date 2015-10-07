@@ -16,3 +16,5 @@ To build the HTML version, just do this in a clone of the repo::
 Contributions and fixes are welcome, encouraged, and credited. Please submit a pull request on GitHub or email me.
 
 中文翻译 openmartin `Github <https://github.com/openmartin/python-packaging>`_
+
+中文版文档地址 http://python-packaging-zh.readthedocs.org/zh_CN/latest/index.html

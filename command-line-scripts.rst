@@ -4,7 +4,7 @@
 很多Python包都有命令行工具. 借助setuptools/PyPI你可以非常方便地添加有用的命令行工具到你发布包当中, 或者你想单纯发布使用Python编写
 的命令行工具.
 
-举个例子, 我们添加一个 ``funniest-joke` 的可执行命令.
+举个例子, 我们添加一个 ``funniest-joke`` 的可执行命令.
 
 在 ``setuptools.setup()`` 中有两种方法 ``scripts`` 参数或是 ``console_scripts`` 入口.
 
