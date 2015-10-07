@@ -1,8 +1,8 @@
-Ìí¼Ó²âÊÔ´úÂë
+æ·»åŠ æµ‹è¯•ä»£ç 
 ==================
 
-**funniest** ĞèÒªÒ»Ğ©²âÊÔ¹¤×÷. ÕâĞ©´úÂë¶¼Ó¦¸Ã·ÅÔÚ``funniest.``×ÓÄ£¿éµÄÄ¿Â¼ÏÂ.
-ÕâÑùµÄ½á¹¹£¬ÕâĞ©²âÊÔ´úÂë¼È¿ÉÒÔµ¼Èë, ÓÖ²»»áÎÛÈ¾È«¾ÖµÄÃüÃû¿Õ¼ä.::
+**funniest** éœ€è¦ä¸€äº›æµ‹è¯•å·¥ä½œ. è¿™äº›ä»£ç éƒ½åº”è¯¥æ”¾åœ¨``funniest.``å­æ¨¡å—çš„ç›®å½•ä¸‹.
+è¿™æ ·çš„ç»“æ„ï¼Œè¿™äº›æµ‹è¯•ä»£ç æ—¢å¯ä»¥å¯¼å…¥, åˆä¸ä¼šæ±¡æŸ“å…¨å±€çš„å‘½åç©ºé—´.::
 
     funniest/
         funniest/
@@ -13,8 +13,8 @@
         setup.py
         ...
 
-``test_joke.py`` ÊÇÎÒÃÇµÚÒ»¸ö²âÊÔÎÄ¼ş.
-ËäÈ»ÏÖÔÚÓĞÒ»Ğ©Ğ¡Ìâ´ó×ö, µ«ÊÇÕâÊÇÎªÁËÑİÊ¾´úÂëÊÇÈçºÎ×éÖ¯µÄ, ËùÒÔÎÒÃÇ´´½¨ÁË``unittest.TestCase`` µÄÒ»¸ö×ÓÀà::
+``test_joke.py`` æ˜¯æˆ‘ä»¬ç¬¬ä¸€ä¸ªæµ‹è¯•æ–‡ä»¶.
+è™½ç„¶ç°åœ¨æœ‰ä¸€äº›å°é¢˜å¤§åš, ä½†æ˜¯è¿™æ˜¯ä¸ºäº†æ¼”ç¤ºä»£ç æ˜¯å¦‚ä½•ç»„ç»‡çš„, æ‰€ä»¥æˆ‘ä»¬åˆ›å»ºäº†``unittest.TestCase`` çš„ä¸€ä¸ªå­ç±»::
 
     from unittest import TestCase
 
@@ -25,13 +25,13 @@
             s = funniest.joke()
             self.assertTrue(isinstance(s, basestring))
 
-ÔËĞĞÕâĞ©²âÊÔÓÃÀı×îºÃµÄ·½Ê½ÊÇÊ¹ÓÃ`Nose <https://nose.readthedocs.org/en/latest/>`_ (ÌØ±ğÊÇÄã²»ÖªµÀÓÃÊ²Ã´µÄÊ±ºò)
+è¿è¡Œè¿™äº›æµ‹è¯•ç”¨ä¾‹æœ€å¥½çš„æ–¹å¼æ˜¯ä½¿ç”¨`Nose <https://nose.readthedocs.org/en/latest/>`_ (ç‰¹åˆ«æ˜¯ä½ ä¸çŸ¥é“ç”¨ä»€ä¹ˆçš„æ—¶å€™)
 The best way to get these tests going (particularly if you're not sure what to use) is `Nose <https://nose.readthedocs.org/en/latest/>`_. With those files added, it's just a matter of running this from the root of the repository::
 
     $ pip install nose
     $ nosetests
 
-ÎªÁË°Ñ²âÊÔ¹¤×÷¼¯³Éµ½``setup.py``ÖĞ, ÎÒÃÇĞèÒªÌí¼ÓÒ»Ğ©²ÎÊı, ÕâĞ©²ÎÊı»áÈ·±£ÔËĞĞ²âÊÔÓÃÀıµÄÊ±ºòNose»á±»°²×°.
+ä¸ºäº†æŠŠæµ‹è¯•å·¥ä½œé›†æˆåˆ°``setup.py``ä¸­, æˆ‘ä»¬éœ€è¦æ·»åŠ ä¸€äº›å‚æ•°, è¿™äº›å‚æ•°ä¼šç¡®ä¿è¿è¡Œæµ‹è¯•ç”¨ä¾‹çš„æ—¶å€™Noseä¼šè¢«å®‰è£….
 To integrate this with our ``setup.py``, and ensure that Nose is installed when we run the tests, we'll add a few lines to ``setup()``::
 
     setup(
@@ -40,10 +40,10 @@ To integrate this with our ``setup.py``, and ensure that Nose is installed when 
         tests_require=['nose'],
     )
 
-È»ºó, ÎÒÃÇ¾Í¿ÉÒÔÕâÑùÔËĞĞ²âÊÔ::
+ç„¶å, æˆ‘ä»¬å°±å¯ä»¥è¿™æ ·è¿è¡Œæµ‹è¯•::
 Then, to run tests, we can simply do::
 
     $ python setup.py test
 
-setuptools ½«»á°²×°noseºÍÔËĞĞ²âÊÔÓÃÀı.
+setuptools å°†ä¼šå®‰è£…noseå’Œè¿è¡Œæµ‹è¯•ç”¨ä¾‹.
 Setuptools will take care of installing nose and running the test suite.

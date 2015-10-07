@@ -1,20 +1,20 @@
-ÃüÁîĞĞ½Å±¾
+å‘½ä»¤è¡Œè„šæœ¬
 ====================
 
-ºÜ¶àPython°ü¶¼ÓĞÃüÁîĞĞ¹¤¾ß. ½èÖúsetuptools/PyPIÄã¿ÉÒÔ·Ç³£·½±ãµØ¸½¼ÓÒ»ÏÂÓĞÓÃµÄÃüÁîĞĞ¹¤¾ßµ½Äã·¢²¼µÄµ±ÖĞ, »òÕßµ¥´¿·¢²¼Ê¹ÓÃPython±àĞ´
-µÄÃüÁîĞĞ¹¤¾ß.
+å¾ˆå¤šPythonåŒ…éƒ½æœ‰å‘½ä»¤è¡Œå·¥å…·. å€ŸåŠ©setuptools/PyPIä½ å¯ä»¥éå¸¸æ–¹ä¾¿åœ°é™„åŠ ä¸€ä¸‹æœ‰ç”¨çš„å‘½ä»¤è¡Œå·¥å…·åˆ°ä½ å‘å¸ƒçš„å½“ä¸­, æˆ–è€…å•çº¯å‘å¸ƒä½¿ç”¨Pythonç¼–å†™
+çš„å‘½ä»¤è¡Œå·¥å…·.
 Many Python packages include command line tools. This is useful for distributing support tools which are associated with a library, or just taking advantage of the setuptools / PyPI infrastructure to distribute a command line tool that happens to use Python.
 
-¾Ù¸öÀı×Ó, ÎÒÃÇÌí¼ÓÒ»¸ö``funniest-joke`µÄ¿ÉÖ´ĞĞÃüÁî.
+ä¸¾ä¸ªä¾‹å­, æˆ‘ä»¬æ·»åŠ ä¸€ä¸ª``funniest-joke`çš„å¯æ‰§è¡Œå‘½ä»¤.
 For **funniest**, we'll add a ``funniest-joke`` command line tool.
 
-ÔÚ``setuptools.setup()``ÖĞÓĞÁ½ÖÖ·½·¨``scripts``²ÎÊı»òÊÇ``console_scripts``Èë¿Ú.
+åœ¨``setuptools.setup()``ä¸­æœ‰ä¸¤ç§æ–¹æ³•``scripts``å‚æ•°æˆ–æ˜¯``console_scripts``å…¥å£.
 There are two mechanisms that ``setuptools.setup()`` provides to do this: the ``scripts`` keyword argument, and the ``console_scripts`` entry point.
 
-``scripts`` ²ÎÊı
+``scripts`` å‚æ•°
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-µÚÒ»ÖÖ·½·¨ÊÇ°ÑÄãµÄÃüÁîĞ´ÔÚÒ»¸öµ¥¶ÀµÄÎÄ¼şÖĞ::
+ç¬¬ä¸€ç§æ–¹æ³•æ˜¯æŠŠä½ çš„å‘½ä»¤å†™åœ¨ä¸€ä¸ªå•ç‹¬çš„æ–‡ä»¶ä¸­::
 The first approach is to write your script in a separate file, such as you might write a shell script.::
 
     funniest/
@@ -26,14 +26,14 @@ The first approach is to write your script in a separate file, such as you might
             funniest-joke
         ...
 
-``bin/funniest-joke`` ÈçÏÂ::
+``bin/funniest-joke`` å¦‚ä¸‹::
 
     #!/usr/bin/env python
 
     import funniest
     print funniest.joke()
 
-ÔÚ``setup()`` Ìí¼Ó::
+åœ¨``setup()`` æ·»åŠ ::
 
     setup(
         ...
@@ -41,23 +41,25 @@ The first approach is to write your script in a separate file, such as you might
         ...
     )
 
-µ±ÎÒÃÇ°²×°Õâ¸ö°üµÄÊ±ºò, setuptools»á°ÑÄãµÄ½Å±¾¸´ÖÆµ½PATHÂ·¾¶ÏÂ::
+å½“æˆ‘ä»¬å®‰è£…è¿™ä¸ªåŒ…çš„æ—¶å€™, setuptoolsä¼šæŠŠä½ çš„è„šæœ¬å¤åˆ¶åˆ°PATHè·¯å¾„ä¸‹::
 When we install the package, setuptools will copy the script to our PATH and make it available for general use.::
 
     $ funniest-joke
 
-Ê¹ÓÃÕâÖÖ·½·¨µÄºÃ´¦ÊÇ¿ÉÒÔÊ¹ÓÃ·ÇPythonµÄÓïÑÔµÄ±àĞ´, ``funniset-joke``¿ÉÒÔÊÇÒ»¸öshell½Å±¾»òÕßÆäËûµÄ¶¼¿ÉÒÔ.
+ä½¿ç”¨è¿™ç§æ–¹æ³•çš„å¥½å¤„æ˜¯å¯ä»¥ä½¿ç”¨éPythonçš„è¯­è¨€çš„ç¼–å†™, ``funniset-joke``å¯ä»¥æ˜¯ä¸€ä¸ªshellè„šæœ¬æˆ–è€…å…¶ä»–çš„éƒ½å¯ä»¥.
 This has advantage of being generalizeable to non-python scripts, as well: ``funniset-joke`` could be a shell script, or something completely different.
 
 
-``console_scripts`` Èë¿Ú
+``console_scripts`` å…¥å£
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-µÚ¶şÖÖ·½·¨ÊÇÊ¹ÓÃ
+ç¬¬äºŒç§æ–¹æ³•æ˜¯é€šè¿‡'entry point'. setuptools å…è®¸æ¨¡å—æ³¨å†Œ'entry points', è¿™æ ·å¯ä»¥ä½¿ç”¨å…¶ä»–åŒ…çš„åŠŸèƒ½. ``console_scripts``ä¹Ÿæ˜¯ä¸€ä¸ª'entry points'.
 The second approach is called an 'entry point'. Setuptools allows modules to register entrypoints which other packages can hook into to provide certain functionality. It also provides a few itself, including the ``console_scripts`` entry point.
 
+``console_scripts`` å…è®¸Pythonçš„*functions* (ä¸æ˜¯æ–‡ä»¶) ç›´æ¥è¢«æ³¨å†Œæˆä¸€ä¸ªå‘½ä»¤è¡Œå·¥å…·.
 This allows Python *functions* (not scripts!) to be directly registered as command-line accessible tools.
 
+è¿™æ ·,æˆ‘ä»¬å°†æ·»åŠ ä¸€ä¸ªæ–°æ–‡ä»¶æä¾›å‘½ä»¤è¡Œå·¥å…·::
 In this case, we'll add a new file and function to support the command line tool::
 
     funniest/
@@ -68,6 +70,7 @@ In this case, we'll add a new file and function to support the command line tool
         setup.py
         ...
 
+``command_line.py`` ä»…ä»…åªæä¾›å‘½ä»¤è¡Œå·¥å…·(è¿™æ ·ç»„ç»‡ä»£ç æ›´æ–¹ä¾¿)::
 The ``command_line.py`` submodule exists only to service the command line tool (which is a convenient organization method)::
 
     import funniest
@@ -75,6 +78,7 @@ The ``command_line.py`` submodule exists only to service the command line tool (
     def main():
         print funniest.joke()
 
+ä½ å¯ä»¥æµ‹è¯•ä¸€ä¸‹, å°±åƒè¿™æ ·::
 You can test the "script" by running it directly, e.g.::
 
     $ python
@@ -82,6 +86,7 @@ You can test the "script" by running it directly, e.g.::
     >>> funniest.command_line.main()
     ...
 
+åœ¨setup.py ä¸­ æ³¨å†Œ``main()``::
 The ``main()`` function can then be registered like so::
 
     setup(
@@ -92,15 +97,6 @@ The ``main()`` function can then be registered like so::
         ...
     )
 
+æˆ‘ä»¬å®‰è£…äº†è¿™ä¸ªåŒ…ä¹‹å, æˆ‘ä»¬å°±å¯ä»¥ç›´æ¥ä½¿ç”¨``funniest-joke`` å‘½ä»¤. å› ä¸ºsetuptools ä¼šè‡ªåŠ¨ç”Ÿæˆä¸€ä¸ªè„šæœ¬, åŒ…æ‹¬å¯¼å…¥æ¨¡å—, ç„¶ååœ¨è°ƒç”¨æ³¨å†Œçš„å‡½æ•°.
 Again, once the package has been installed, we can use it in the same way. Setuptools will generate a standalone script 'shim' which imports your module and calls the registered function.
 
-This method has the advantage that it's very easily testable. Instead of having to shell out to spawn the script, we can have a test case that just does something like::
-
-    from unittest import TestCase
-    from funniest.command_line import main
-
-    class TestConsole(TestCase):
-        def test_basic(self):
-            main()
-
-In order to make that more useful, we'll probably want something like a context manager which temporarily captures ``sys.stdout``, but that is outside the scope of this tutorial.

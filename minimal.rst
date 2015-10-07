@@ -1,47 +1,47 @@
-×îĞ¡µÄ½á¹¹
+æœ€å°çš„ç»“æ„
 =================
 
-ÈÃÎÒÃÇÀ´¿´Ò»Ğ¡¶Î´úÂë::
+è®©æˆ‘ä»¬æ¥çœ‹ä¸€å°æ®µä»£ç ::
 
     def joke():
-        return (u'ÈçºÎÇø·ÖHTMLºÍHTML5?'
-                u'ÓÃIE´ò¿ªÊÔÊÔ,Èç¹û²»ÄÜÕı³£ÏÔÊ¾¾ÍÊÇHTML5')
+        return (u'å¦‚ä½•åŒºåˆ†HTMLå’ŒHTML5?'
+                u'ç”¨IEæ‰“å¼€è¯•è¯•,å¦‚æœä¸èƒ½æ­£å¸¸æ˜¾ç¤ºå°±æ˜¯HTML5')
 
-ÕâĞ¡¶Î´úÂë½ö½öÊÇÎªÁËÕ¹Ê¾ÈçºÎ´ò°üºÍ·Ö·¢Python´úÂë¡£
+è¿™å°æ®µä»£ç ä»…ä»…æ˜¯ä¸ºäº†å±•ç¤ºå¦‚ä½•æ‰“åŒ…å’Œåˆ†å‘Pythonä»£ç ã€‚
 
 
-Ñ¡ÔñÒ»¸ö°üÃû
+é€‰æ‹©ä¸€ä¸ªåŒ…å
 ~~~~~~~~~~~~~~
 
-Python Ä£¿é»òÕß°üÃûÓ¦¸Ã×ñÊØÒÔÏÂµÄ¹æÔò:
+Python æ¨¡å—æˆ–è€…åŒ…ååº”è¯¥éµå®ˆä»¥ä¸‹çš„è§„åˆ™:
 Python module/package names should generally follow the following constraints:
 
-* È«Ğ¡Ğ´
-* ²»ÒªºÍpypiÉÏÒÑÓĞµÄ°üÃûÖØ¸´£¬¼´Ê¹Äã²»Ïë¹«¿ª·¢²¼ÄãµÄ°ü£¬ÒòÎªÄãµÄ°ü¿ÉÄÜ×÷ÎªÆäËû°üµÄÒÀÀµ°ü
-* Ê¹ÓÃÏÂ»®Ïß·Ö¸ôµ¥´Ê»òÕßÊ²Ã´¶¼²»ÓÃ(²»ÒªÊ¹ÓÃÁ¬×Ö·û)
+* å…¨å°å†™
+* ä¸è¦å’Œpypiä¸Šå·²æœ‰çš„åŒ…åé‡å¤ï¼Œå³ä½¿ä½ ä¸æƒ³å…¬å¼€å‘å¸ƒä½ çš„åŒ…ï¼Œå› ä¸ºä½ çš„åŒ…å¯èƒ½ä½œä¸ºå…¶ä»–åŒ…çš„ä¾èµ–åŒ…
+* ä½¿ç”¨ä¸‹åˆ’çº¿åˆ†éš”å•è¯æˆ–è€…ä»€ä¹ˆéƒ½ä¸ç”¨(ä¸è¦ä½¿ç”¨è¿å­—ç¬¦)
 
-ÏÖÔÚ°ÑÎÒÃÇµÄº¯Êı±ä³ÉÒ»¸öPython module **funniest**
+ç°åœ¨æŠŠæˆ‘ä»¬çš„å‡½æ•°å˜æˆä¸€ä¸ªPython module **funniest**
 
 
-¿ªÊ¼¹¤×÷
+å¼€å§‹å·¥ä½œ
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ä¿Â¼½á¹¹ **funniest** ÈçÏÂ::
+ç›®å½•ç»“æ„ **funniest** å¦‚ä¸‹::
 
     funniest/
         funniest/
             __init__.py
         setup.py
 
-×îÍâ²ãµÄÄ¿Â¼ÊÇÎÒÃÇ°æ±¾¹ÜÀí¹¤¾ßµÄ¸ùÄ¿Â¼, ÀıÈç``funniest.git``. ×ÓÄ¿Â¼£¬Ò²½Ğ``funniest``, ´ú±íPython module.
+æœ€å¤–å±‚çš„ç›®å½•æ˜¯æˆ‘ä»¬ç‰ˆæœ¬ç®¡ç†å·¥å…·çš„æ ¹ç›®å½•, ä¾‹å¦‚``funniest.git``. å­ç›®å½•ï¼Œä¹Ÿå«``funniest``, ä»£è¡¨Python module.
 
-ÎªÁË¸üºÃÀí½â, ÎÒÃÇ°Ñº¯Êı``joke()`` ·Åµ½ ``__init__.py``ÖĞ::
+ä¸ºäº†æ›´å¥½ç†è§£, æˆ‘ä»¬æŠŠå‡½æ•°``joke()`` æ”¾åˆ° ``__init__.py``ä¸­::
 
     def joke():
-        return (u'ÈçºÎÇø·ÖHTMLºÍHTML5?'
-                u'ÓÃIE´ò¿ªÊÔÊÔ,Èç¹û²»ÄÜÕı³£ÏÔÊ¾¾ÍÊÇHTML5')
+        return (u'å¦‚ä½•åŒºåˆ†HTMLå’ŒHTML5?'
+                u'ç”¨IEæ‰“å¼€è¯•è¯•,å¦‚æœä¸èƒ½æ­£å¸¸æ˜¾ç¤ºå°±æ˜¯HTML5')
 
-×îÖ÷ÒªµÄsetupÅäÖÃÎÄ¼şÊÇ``setup.py``, Ó¦¸Ã°üº¬Ò»ĞĞ´úÂëµ÷ÓÃ``setuptools.setup()``,¾ÍÏñÏÂÃæÕâÑù::
+æœ€ä¸»è¦çš„setupé…ç½®æ–‡ä»¶æ˜¯``setup.py``, åº”è¯¥åŒ…å«ä¸€è¡Œä»£ç è°ƒç”¨``setuptools.setup()``,å°±åƒä¸‹é¢è¿™æ ·::
 
     from setuptools import setup
 
@@ -55,91 +55,91 @@ Python module/package names should generally follow the following constraints:
           packages=['funniest'],
           zip_safe=False)
 
-ÏÖÔÚÎÒÃÇ¿ÉÒÔÔÚ±¾µØ°²×°Õâ¸öpython°ü::
+ç°åœ¨æˆ‘ä»¬å¯ä»¥åœ¨æœ¬åœ°å®‰è£…è¿™ä¸ªpythonåŒ…::
 
     $ python setup.py install
 
-ÎÒÃÇÒ²¿ÉÒÔÊ¹ÓÃ¿ª·¢Ä£Ê½°²×°Õâ¸ö°ü, Ã¿´ÎĞŞ¸Ä´úÂëÖ®ºó²»ÓÃÖØĞÂ°²×°, Á¢¼´¿ÉÓÃ×îĞÂµÄ´úÂë.
+æˆ‘ä»¬ä¹Ÿå¯ä»¥ä½¿ç”¨å¼€å‘æ¨¡å¼å®‰è£…è¿™ä¸ªåŒ…, æ¯æ¬¡ä¿®æ”¹ä»£ç ä¹‹åä¸ç”¨é‡æ–°å®‰è£…, ç«‹å³å¯ç”¨æœ€æ–°çš„ä»£ç .
 
     $ python setup.py develop
 
-²»¹ÜÓÃÄÄÖÖ·½Ê½£¬°²×°Ö®ºó¾Í¿ÉÒÔÔÚpythonÖĞÊ¹ÓÃÕâ¸ö°ü::
+ä¸ç®¡ç”¨å“ªç§æ–¹å¼ï¼Œå®‰è£…ä¹‹åå°±å¯ä»¥åœ¨pythonä¸­ä½¿ç”¨è¿™ä¸ªåŒ…::
 
     >>> import funniest
     >>> print funniest.joke()
 
 
-ÔÚPyPIÉÏ·¢²¼
+åœ¨PyPIä¸Šå‘å¸ƒ
 ~~~~~~~~~~~~~~~~~~
 
-½Å±¾ ``setup.py`` Ò²ÊÇÔÚPyPI×¢²áºÍÉÏ´«Ô´Âë°üµÄÈë¿Ú.
+è„šæœ¬ ``setup.py`` ä¹Ÿæ˜¯åœ¨PyPIæ³¨å†Œå’Œä¸Šä¼ æºç åŒ…çš„å…¥å£.
 ``setup.py`` script is also our main entrypoint to register the package name on PyPI and upload source distributions.
 
-µÚÒ»²½×¢²áÕâ¸ö°ü(°üÀ¨×¢²á°üÃû,ÉÏ´«ÔªÊı¾İ,´´½¨pypi.python.orgµÄÒ³Ãæ)::
+ç¬¬ä¸€æ­¥æ³¨å†Œè¿™ä¸ªåŒ…(åŒ…æ‹¬æ³¨å†ŒåŒ…å,ä¸Šä¼ å…ƒæ•°æ®,åˆ›å»ºpypi.python.orgçš„é¡µé¢)::
 
     $ python setup.py register
 
-Èç¹û´ÓÎ´ÔÚPyPIÉÏ·¢²¼¹ı¶«Î÷, ÄãĞèÒª´´½¨Ò»¸öÕËºÅ, ÃüÁîĞĞÏòµ¼»áÒ»²½Ò»²½¸æËßÄãÔõÃ´×ö.
+å¦‚æœä»æœªåœ¨PyPIä¸Šå‘å¸ƒè¿‡ä¸œè¥¿, ä½ éœ€è¦åˆ›å»ºä¸€ä¸ªè´¦å·, å‘½ä»¤è¡Œå‘å¯¼ä¼šä¸€æ­¥ä¸€æ­¥å‘Šè¯‰ä½ æ€ä¹ˆåš.
 If you haven't published things on PyPI before, you'll need to create an account by following the steps provided at this point.
 
-×¢²áÖ®ºóÄã¿ÉÒÔÔÚPyPI¿´µ½Õâ¸ö°üµÄÒ³Ãæ**funniest**:
+æ³¨å†Œä¹‹åä½ å¯ä»¥åœ¨PyPIçœ‹åˆ°è¿™ä¸ªåŒ…çš„é¡µé¢**funniest**:
 At this point you can view the (very minimal) page on PyPI describing **funniest**:
 
 http://pypi.python.org/pypi/funniest/0.1
 
-¾¡¹ÜÓÃ»§¿ÉÒÔ¸ù¾İURLÁ´½ÓÕÒµ½ÄãµÄgit²Ö¿â, µ«ÊÇÎªÁËÊ¹ÓÃ·½±ãÎÒÃÇĞèÒªÉÏ´«Ò»¸öÔ´Âë°ü. ÓÃ»§²»ĞèÒªcloneÄãµÄgit²Ö¿â£¬¶øÇÒ¿ÉÒÔÊ¹ÓÃ°²×°¹¤¾ß
-×Ô¶¯»¯°²×°ºÍËÑË÷ÒÀÀµ¹ØÏµ.
+å°½ç®¡ç”¨æˆ·å¯ä»¥æ ¹æ®URLé“¾æ¥æ‰¾åˆ°ä½ çš„gitä»“åº“, ä½†æ˜¯ä¸ºäº†ä½¿ç”¨æ–¹ä¾¿æˆ‘ä»¬éœ€è¦ä¸Šä¼ ä¸€ä¸ªæºç åŒ…. ç”¨æˆ·ä¸éœ€è¦cloneä½ çš„gitä»“åº“ï¼Œè€Œä¸”å¯ä»¥ä½¿ç”¨å®‰è£…å·¥å…·
+è‡ªåŠ¨åŒ–å®‰è£…å’Œæœç´¢ä¾èµ–å…³ç³».
 Although users can follow the URL link to find our git repository, we'll probably want to upload a source distribution so that the package can be installed without cloning the repository. This will also enable automated installation and dependency resolution tools to install our package.
 
-µÚ¶ş²½´´½¨Ò»¸öÔ´Âë°ü::
+ç¬¬äºŒæ­¥åˆ›å»ºä¸€ä¸ªæºç åŒ…::
 First create a source distribution with::
 
     $ python setup.py sdist
 
-ÕâÒ»²½»áÔÚÄãµÄ¶¥²ãÄ¿Â¼ÏÂ´´½¨``dist/funniest-0.1.tar.gz``. Èç¹ûÄãÓĞÊ±¼ä, ¿ÉÒÔ°ÑÕâ¸öÎÄ¼ş¿½±´µ½ÁíÒ»Ì¨Ö÷»úÉÏ, ½âÑ¹È»ºó°²×°,
-²âÊÔÒ»ÏÂ°²×°°ü.
+è¿™ä¸€æ­¥ä¼šåœ¨ä½ çš„é¡¶å±‚ç›®å½•ä¸‹åˆ›å»º``dist/funniest-0.1.tar.gz``. å¦‚æœä½ æœ‰æ—¶é—´, å¯ä»¥æŠŠè¿™ä¸ªæ–‡ä»¶æ‹·è´åˆ°å¦ä¸€å°ä¸»æœºä¸Š, è§£å‹ç„¶åå®‰è£…,
+æµ‹è¯•ä¸€ä¸‹å®‰è£…åŒ….
 This will create ``dist/funniest-0.1.tar.gz`` inside our top-level directory. If you like, copy that file to another host and try unpacking it and install it, just to verify that it works for you.
 
-µÚÈı²½ÉÏ´«µ½PyPI::
+ç¬¬ä¸‰æ­¥ä¸Šä¼ åˆ°PyPI::
 That file can then be uploaded to PyPI with::
 
     $ python setup.py sdist upload
 
-Äã¿ÉÒÔ°ÑÕâ¼¸²½½áºÏÆğÀ´, ¸üĞÂÔªÊı¾İ, ·¢²¼ĞÂ°æ±¾, Ò»²½¾ÍÍê³É::
+ä½ å¯ä»¥æŠŠè¿™å‡ æ­¥ç»“åˆèµ·æ¥, æ›´æ–°å…ƒæ•°æ®, å‘å¸ƒæ–°ç‰ˆæœ¬, ä¸€æ­¥å°±å®Œæˆ::
 You can combine all of these steps, to update metadata and publish a new build in a single step::
 
     $ python setup.py register sdist upload
 
-ÏëÒª²é¿´setup.py¸ü¶àµÄ¹¦ÄÜ¿ÉÒÔ¿´¿´°ïÖú::
+æƒ³è¦æŸ¥çœ‹setup.pyæ›´å¤šçš„åŠŸèƒ½å¯ä»¥çœ‹çœ‹å¸®åŠ©::
 For a detailed list of all available setup.py commands, do::
 
     $ python setup.py --help-commands
 
 
-°²×°Õâ¸ö°ü
+å®‰è£…è¿™ä¸ªåŒ…
 ~~~~~~~~~~~~~~~~~~~~~~
 
-ÉÏÃæµÄ²½ÖèÍê³ÉÖ®ºó, ÆäËûÓÃ»§¿ÉÒÔÖ±½ÓÓÃ``easy_install``°²×°::
+ä¸Šé¢çš„æ­¥éª¤å®Œæˆä¹‹å, å…¶ä»–ç”¨æˆ·å¯ä»¥ç›´æ¥ç”¨``easy_install``å®‰è£…::
 At this point, other consumers of this package can install the package with ``easy_install``::
 
     easy_install funniest
 
-»òÕßÊ¹ÓÃ``pip``::
+æˆ–è€…ä½¿ç”¨``pip``::
 Or better yet, ``pip``::
 
     $ pip install funniest
 
-Èç¹ûÕâ°ü×÷ÎªÆäËû°üµÄÒÀÀµ°ü, Ëü½«±»×Ô¶¯°²×°(ÎÒÃÇÔÚºóÃæ»áÌáµ½ÈçºÎÅäÖÃ)
+å¦‚æœè¿™åŒ…ä½œä¸ºå…¶ä»–åŒ…çš„ä¾èµ–åŒ…, å®ƒå°†è¢«è‡ªåŠ¨å®‰è£…(æˆ‘ä»¬åœ¨åé¢ä¼šæåˆ°å¦‚ä½•é…ç½®)
 They can specify it as a dependency for another package, and it will be automatically installed when that package is installed (we'll get to how to do that later).
 
 
-Ìí¼ÓÆäËûÎÄ¼ş
+æ·»åŠ å…¶ä»–æ–‡ä»¶
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-´ó²¿·ÖÊ±¼äÎÒÃÇµÄ´úÂë·ÖÉ¢ÔÚ¶à¸öÎÄ¼şµ±ÖĞ,
+å¤§éƒ¨åˆ†æ—¶é—´æˆ‘ä»¬çš„ä»£ç åˆ†æ•£åœ¨å¤šä¸ªæ–‡ä»¶å½“ä¸­,
 Most of the time we'll want more than one file containing code inside of our module. Additional files should always be added inside the inner ``funniest`` directory.
 
-¾Ù¸öÀı×Ó, ÎÒÃÇ°Ñº¯ÊıÒÆ¶¯µ½Ò»¸öĞÂµÄÎÄ¼şÖĞ``text``, ÏÖÔÚÎÒÃÇµÄÄ¿Â¼½á¹¹ÊÇÕâÑù×ÓµÄ::
+ä¸¾ä¸ªä¾‹å­, æˆ‘ä»¬æŠŠå‡½æ•°ç§»åŠ¨åˆ°ä¸€ä¸ªæ–°çš„æ–‡ä»¶ä¸­``text``, ç°åœ¨æˆ‘ä»¬çš„ç›®å½•ç»“æ„æ˜¯è¿™æ ·å­çš„::
 For example, let's move our one function to a new ``text`` submodule, so our directory hierarchy looks like this::
 
     funniest/
@@ -155,17 +155,17 @@ For example, let's move our one function to a new ``text`` submodule, so our dir
 ``text.py``::
 
     def joke():
-        return (u'ÈçºÎÇø·ÖHTMLºÍHTML5?'
-                u'ÓÃIE´ò¿ªÊÔÊÔ,Èç¹û²»ÄÜÕı³£ÏÔÊ¾¾ÍÊÇHTML5')
+        return (u'å¦‚ä½•åŒºåˆ†HTMLå’ŒHTML5?'
+                u'ç”¨IEæ‰“å¼€è¯•è¯•,å¦‚æœä¸èƒ½æ­£å¸¸æ˜¾ç¤ºå°±æ˜¯HTML5')
 
-ËùÓĞµÄ´úÂëÓ¦¸Ã¶¼ÔÚ ``funniest/funniest/`` Ä¿Â¼ÏÂ.
+æ‰€æœ‰çš„ä»£ç åº”è¯¥éƒ½åœ¨ ``funniest/funniest/`` ç›®å½•ä¸‹.
 
 
-ºöÂÔµÄÎÄ¼ş (.gitignore, etc)
+å¿½ç•¥çš„æ–‡ä»¶ (.gitignore, etc)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ÎÒÃÇ¿ÉÄÜĞèÒªÒ»¸ö``.gitignore``ÎÄ¼ş, ÒòÎª´´½¨°üµÄ¹ı³ÌÖĞ»á²úÉúÒ»ÏÂÖĞ¼äÎÄ¼ş, ÎÒÃÇ²¢²»ÏëÌá½»µ½´úÂë²Ö¿âµ±ÖĞ.
-ÏÂÃæÊÇÒ»¸ö``.gitignore``µÄÀı×Ó::
+æˆ‘ä»¬å¯èƒ½éœ€è¦ä¸€ä¸ª``.gitignore``æ–‡ä»¶, å› ä¸ºåˆ›å»ºåŒ…çš„è¿‡ç¨‹ä¸­ä¼šäº§ç”Ÿä¸€ä¸‹ä¸­é—´æ–‡ä»¶, æˆ‘ä»¬å¹¶ä¸æƒ³æäº¤åˆ°ä»£ç ä»“åº“å½“ä¸­.
+ä¸‹é¢æ˜¯ä¸€ä¸ª``.gitignore``çš„ä¾‹å­::
 There's one more thing we'll probably want in a 'bare bones' package: a ``.gitignore`` file, or the equivalent for other SCMs. The Python build system creates a number of intermediary files we'll want to be careful to not commit to source control. Here's an example of what ``.gitignore`` should look like for **funniest**::
 
     # Compiled python modules.
@@ -178,11 +178,11 @@ There's one more thing we'll probably want in a 'bare bones' package: a ``.gitig
     /*.egg-info
 
 
-´ó¹¦¸æ³É
+å¤§åŠŸå‘Šæˆ
 ~~~~~~~~~~~~~~~~~~~
 
-ÉÏÃæ½²µÄ½á¹¹ÒÑ¾­°üº¬ÁË´´½¨Ò»¸ö°üµÄËùÓĞ²½Öè. Èç¹ûËùÓĞµÄPython¹¤¾ßºÍ¿â¶¼×ñÑ­Í¬ÑùµÄ¹æÔòÀ´´ò°ü, ÊÀ½ç»á¸ü¼ÓÃÀºÃ.
+ä¸Šé¢è®²çš„ç»“æ„å·²ç»åŒ…å«äº†åˆ›å»ºä¸€ä¸ªåŒ…çš„æ‰€æœ‰æ­¥éª¤. å¦‚æœæ‰€æœ‰çš„Pythonå·¥å…·å’Œåº“éƒ½éµå¾ªåŒæ ·çš„è§„åˆ™æ¥æ‰“åŒ…, ä¸–ç•Œä¼šæ›´åŠ ç¾å¥½.
 The structure described so far is all that's necessary to create reusable simple packages with no 'packaging bugs'. If every published Python tool or library used followed these rules, the world would be a better place.
 
-**¿Í¹Ù±ğ¼±** ÏÂÃæ»¹ÓĞ¸ü¶àÄÚÈİ, ÒòÎª´ó²¿·ÖµÄ°ü»¹ĞèÒªÃüÁîĞĞ½Å±¾, ÎÄµµ, ²âÊÔ£¬·ÖÎö¹¤¾ßµÈµÈ, Çë¿´ÏÂÒ»Æª.
+**å®¢å®˜åˆ«æ€¥** ä¸‹é¢è¿˜æœ‰æ›´å¤šå†…å®¹, å› ä¸ºå¤§éƒ¨åˆ†çš„åŒ…è¿˜éœ€è¦å‘½ä»¤è¡Œè„šæœ¬, æ–‡æ¡£, æµ‹è¯•ï¼Œåˆ†æå·¥å…·ç­‰ç­‰, è¯·çœ‹ä¸‹ä¸€ç¯‡.
 **But wait, there's more!** Most packages will want to add things like command line scripts, documentation, tests, and analysis tools. Read on for more.

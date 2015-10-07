@@ -1,4 +1,4 @@
-Putting It All Together
+我们把所有的东西组合起来
 =======================
 
 Our whole package, for reference, looks like this::

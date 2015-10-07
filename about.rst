@@ -1,4 +1,4 @@
-About This Tutorial / Contributing
+关于这篇教程.
 ==================================
 
 Scott Torborg - `storborg@gmail.com <mailto:storborg@gmail.com>`_.
@@ -14,3 +14,5 @@ To build the HTML version, just do this in a clone of the repo::
     $ make html
 
 Contributions and fixes are welcome, encouraged, and credited. Please submit a pull request on GitHub or email me.
+
+中文翻译 openmartin `Github <https://github.com/openmartin/python-packaging>`_

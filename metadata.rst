@@ -1,8 +1,8 @@
-×éÖ¯¸üºÃµØÔªÊı¾İ
+ç»„ç»‡æ›´å¥½åœ°å…ƒæ•°æ®
 =======================
 
-``setuptools.setup()`` º¯Êı½ÓÊÜºÜ¶à²ÎÊı, ĞèÒªÄãÌîĞ´¹ØÓÚÄãµÄ°üµÄÔªÊı¾İ.
-ÍêÕûµÄÌîĞ´ÕâĞ©²ÎÊı¿ÉÒÔÈÃÈËÃÇ¸ü¼ÓÈİÒ×ÕÒµ½ºÍÅĞ¶ÏÄãµÄ°üÊÇ¸ÉÊ²Ã´µÄ.::
+``setuptools.setup()`` å‡½æ•°æ¥å—å¾ˆå¤šå‚æ•°, éœ€è¦ä½ å¡«å†™å…³äºä½ çš„åŒ…çš„å…ƒæ•°æ®.
+å®Œæ•´çš„å¡«å†™è¿™äº›å‚æ•°å¯ä»¥è®©äººä»¬æ›´åŠ å®¹æ˜“æ‰¾åˆ°å’Œåˆ¤æ–­ä½ çš„åŒ…æ˜¯å¹²ä»€ä¹ˆçš„.::
 The ``setuptools.setup()`` call accepts a variety of keyword arguments to specify additional metadata about your package.
 This can help people find your package and evaluate quickly whether or not it is what they're looking for.::
 
@@ -30,18 +30,18 @@ This can help people find your package and evaluate quickly whether or not it is
           include_package_data=True,
           zip_safe=False)
 
-ÍêÕûµÄ·ÖÀàÁĞ±íÔÚÕâÀïhttp://pypi.python.org/pypi?%3Aaction=list_classifiers.
+å®Œæ•´çš„åˆ†ç±»åˆ—è¡¨åœ¨è¿™é‡Œhttp://pypi.python.org/pypi?%3Aaction=list_classifiers.
 For a full list of the possible arguments to ``classifiers``, visit http://pypi.python.org/pypi?%3Aaction=list_classifiers.
 
 
 README / Long Description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Äã¿ÉÄÜÏ£ÍûÌí¼ÓÒ»¸öREADMEËµÃ÷ÎÄ¼şµ½ÄãµÄ°üÖĞ, ¶øÇÒÒ²¿ÉÒÔÂú×ãPyPI``long_description``µÄ¹æ·¶. Èç¹û
-Õâ¸öÎÄ¼şÊ¹ÓÃreStructuredTextÓï·¨, ½«»áÓĞ¸ü·á¸»µÄ¸ñÊ½.
+ä½ å¯èƒ½å¸Œæœ›æ·»åŠ ä¸€ä¸ªREADMEè¯´æ˜æ–‡ä»¶åˆ°ä½ çš„åŒ…ä¸­, è€Œä¸”ä¹Ÿå¯ä»¥æ»¡è¶³PyPI``long_description``çš„è§„èŒƒ. å¦‚æœ
+è¿™ä¸ªæ–‡ä»¶ä½¿ç”¨reStructuredTextè¯­æ³•, å°†ä¼šæœ‰æ›´ä¸°å¯Œçš„æ ¼å¼.
 You'll probably want a README file in your source distribution, and that file can serve double purpose as the ``long_description`` specified to PyPI. Further, if that file is written in reStructuredText, it can be formatted nicely.
 
-**funniest**, Ìí¼ÓÁ½¸öÎÄ¼ş::
+**funniest**, æ·»åŠ ä¸¤ä¸ªæ–‡ä»¶::
 
     funniest/
         funniest/
@@ -64,10 +64,10 @@ You'll probably want a README file in your source distribution, and that file ca
 
     include README.rst
 
-Õâ¸öÎÄ¼şÊÇÓÃÀ´¸æËßsetuptools´ò°üµÄÊ±ºò°ÑREADME.rstÌí¼Ó½øÈ¥, ·ñÔòµÄ»°Ö»»á´ò°ü°üº¬Python´úÂëµÄÎÄ¼ş.
+è¿™ä¸ªæ–‡ä»¶æ˜¯ç”¨æ¥å‘Šè¯‰setuptoolsæ‰“åŒ…çš„æ—¶å€™æŠŠREADME.rstæ·»åŠ è¿›å», å¦åˆ™çš„è¯åªä¼šæ‰“åŒ…åŒ…å«Pythonä»£ç çš„æ–‡ä»¶.
 This file is necessary to tell setuptools to include the README.rst file when generating source distributions. Otherwise, only Python files will be included.
 
-µ½ÏÖÔÚ``setup.py``ĞŞ¸Ä::
+åˆ°ç°åœ¨``setup.py``ä¿®æ”¹::
 Now we can use it in setup.py like::
 
     from setuptools import setup
@@ -98,5 +98,5 @@ Now we can use it in setup.py like::
           include_package_data=True,
           zip_safe=False)
 
-µ±ÄãµÄ´úÂë´æ·ÅÔÚGitHub»òÕßÊÇBitBucket, README.rst »á×Ô¶¯³ÉÎªÏîÄ¿µÄÖ÷Ò³.
+å½“ä½ çš„ä»£ç å­˜æ”¾åœ¨GitHubæˆ–è€…æ˜¯BitBucket, README.rst ä¼šè‡ªåŠ¨æˆä¸ºé¡¹ç›®çš„ä¸»é¡µ.
 When the repo is hosted on GitHub or BitBucket, the README.rst file will also automatically be picked up and used as a 'homepage' for the project.
