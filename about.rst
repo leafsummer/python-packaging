@@ -1,4 +1,4 @@
-关于这篇教程.
+关于这篇教程
 ==================================
 
 Scott Torborg - `storborg@gmail.com <mailto:storborg@gmail.com>`_.
