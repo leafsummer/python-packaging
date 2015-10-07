@@ -1,14 +1,11 @@
-Specifying Dependencies
+ä¾èµ–å…³ç³»
 =======================
 
-Èç¹ûÄãÊ¹ÓÃPython, ºÜ×ÔÈ»µÄÄã»áÊ¹ÓÃÆäËûÈËÔÚPyPI»òÕßÆäËûµØ·½¹«¿ª·¢²¼µÄ°ü
-If you're using Python, odds are you're going to want to use other public packages from PyPI or elsewhere.
+å¦‚æœä½ ä½¿ç”¨Python, å¾ˆè‡ªç„¶çš„ä½ ä¼šä½¿ç”¨å…¶ä»–äººåœ¨PyPIæˆ–è€…å…¶ä»–åœ°æ–¹å…¬å¼€å‘å¸ƒçš„åŒ…
 
-setuptools¸øÎÒÃÇÌá¹©ÁËºÜ·½±ãµÄ¹¤¾ßÀ´ËµÃ÷ÒÀÀµ¹ØÏµ, ¶øÇÒÔÚ°²×°ÎÒÃÇµÄ°üµÄÊ±ºò»Ø×Ô¶¯°²×°ÒÀÀµ°ü.
-Fortunately, setuptools makes it easy for us to specify those dependencies (assuming they are packaged correctly) and automatically install them when our packages is installed.
+setuptoolsç»™æˆ‘ä»¬æä¾›äº†å¾ˆæ–¹ä¾¿çš„å·¥å…·æ¥è¯´æ˜ä¾èµ–å…³ç³», è€Œä¸”åœ¨å®‰è£…æˆ‘ä»¬çš„åŒ…çš„æ—¶å€™ä¼šè‡ªåŠ¨å®‰è£…ä¾èµ–åŒ….
 
-ÎÒÃÇ¸ø**funniest** joke Ìí¼ÓÒ»Ğ©¸ñÊ½£¬ Ê¹ÓÃ`Markdown <http://pypi.python.org/pypi/Markdown/>`_.
-We can add some formatting spice to the **funniest** joke with `Markdown <http://pypi.python.org/pypi/Markdown/>`_.
+æˆ‘ä»¬å¯ä»¥ç»™ **funniest** joke æ·»åŠ ä¸€äº›æ ¼å¼ï¼Œ ä½¿ç”¨`Markdown <http://pypi.python.org/pypi/Markdown/>`_.
 
 ``__init__.py``::
 
@@ -19,11 +16,10 @@ We can add some formatting spice to the **funniest** joke with `Markdown <http:/
                         u'Try it out in **Internet Explorer**.'
                         u'Does it work?'
                         u'No?'
-                        u'It's HTML5.')
+                        u'It\'s HTML5.')
 
 
-ÏÖÔÚÎÒÃÇµÄ°üÒÀÀµ``markdown``Õâ¸ö°ü. ÎÒÃÇĞèÒªÔÚ``setup.py``ÖĞÌí¼Ó``install_requires``²ÎÊı::
-Now our package depends on the ``markdown`` package. To note that in ``setup.py``, we just add an ``install_requires`` keyword argument::
+ç°åœ¨æˆ‘ä»¬çš„åŒ…ä¾èµ–``markdown``è¿™ä¸ªåŒ…. æˆ‘ä»¬éœ€è¦åœ¨``setup.py``ä¸­æ·»åŠ ``install_requires``å‚æ•°::
 
     from setuptools import setup
 
@@ -40,8 +36,7 @@ Now our package depends on the ``markdown`` package. To note that in ``setup.py`
           ],
           zip_safe=False)
 
-ÎªÁË²âÊÔÊÇ·ñ¿ÉĞĞ£¬ÎÒÃÇ¿ÉÒÔÊÔÒ»ÊÔ``python setup.py develop``::
-To prove this works, we can run ``python setup.py develop`` again, and we'll see::
+ä¸ºäº†æµ‹è¯•æ˜¯å¦å¯è¡Œï¼Œæˆ‘ä»¬å¯ä»¥è¯•ä¸€è¯•``python setup.py develop``::
 
     $ python setup.py develop
     running develop
@@ -65,21 +60,16 @@ To prove this works, we can run ``python setup.py develop`` again, and we'll see
     Using /.../site-packages
     Finished processing dependencies for funniest==0.1
 
-µ±ÎÒÃÇ°²×°funniest°üµÄÊ±ºò, ``pip install funniest``Ò²»áÍ¬Ê±°²×°``markdown``.
-When we publish this to PyPI, calling ``pip install funniest`` or similar will also install ``markdown``.
+å½“æˆ‘ä»¬å®‰è£…funnieståŒ…çš„æ—¶å€™, ``pip install funniest``ä¹Ÿä¼šåŒæ—¶å®‰è£…``markdown``.
 
 
-²»ÔÚPyPIÖĞµÄ°ü
+ä¸åœ¨PyPIä¸­çš„åŒ…
 ~~~~~~~~~~~~~~~~~~~~
 
-ÓĞÊ±ºò, ÄãĞèÒªÒ»Ğ©°´ÕÕsetuptools¸ñÊ½×éÖ¯µÄ°²×°°ü, µ«ÊÇËüÃÇÃ»ÓĞÔÚPyPI·¢²¼. ÔÚÕâÖÖÇé¿öÏÂ, Äã¿ÉÒÔÔÚ``dependency_links``
-ÖĞÌîÈëÏÂÔØµÄURL, ¿ÉÄÜĞèÒªÔÚURLÖĞ¼ÓÒ»Ğ©ÆäËûĞÅÏ¢, setuptools½«¸ù¾İURLÕÒµ½ºÍ°²×°ÕâĞ©ÒÀÀµ°ü.
-Sometimes you'll want to use packages that are properly arranged with setuptools, but aren't published to PyPI.
-In those cases, you can specify a list of one or more ``dependency_links`` URLs where the package can be downloaded,
-along with some additional hints, and setuptools will find and install the package correctly.
+æœ‰æ—¶å€™, ä½ éœ€è¦ä¸€äº›æŒ‰ç…§setuptoolsæ ¼å¼ç»„ç»‡çš„å®‰è£…åŒ…, ä½†æ˜¯å®ƒä»¬æ²¡æœ‰åœ¨PyPIå‘å¸ƒ. åœ¨è¿™ç§æƒ…å†µä¸‹, ä½ å¯ä»¥åœ¨``dependency_links``
+ä¸­å¡«å…¥ä¸‹è½½çš„URL, å¯èƒ½éœ€è¦åœ¨URLä¸­åŠ ä¸€äº›å…¶ä»–ä¿¡æ¯, setuptoolså°†æ ¹æ®URLæ‰¾åˆ°å’Œå®‰è£…è¿™äº›ä¾èµ–åŒ….
 
-¾Ù¸öÀı×Ó, GithubÉÏµÄ°ü¿ÉÒÔ°´ÕÕÏÂÃæµÄ¸ñÊ½ÌîĞ´URL::
-For example, if a library is published on GitHub, you can specify it like::
+ä¸¾ä¸ªä¾‹å­, Githubä¸Šçš„åŒ…å¯ä»¥æŒ‰ç…§ä¸‹é¢çš„æ ¼å¼å¡«å†™URL::
 
     setup(
         ...

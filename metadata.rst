@@ -3,8 +3,6 @@
 
 ``setuptools.setup()`` 函数接受很多参数, 需要你填写关于你的包的元数据.
 完整的填写这些参数可以让人们更加容易找到和判断你的包是干什么的.::
-The ``setuptools.setup()`` call accepts a variety of keyword arguments to specify additional metadata about your package.
-This can help people find your package and evaluate quickly whether or not it is what they're looking for.::
 
     from setuptools import setup
 
@@ -30,8 +28,7 @@ This can help people find your package and evaluate quickly whether or not it is
           include_package_data=True,
           zip_safe=False)
 
-完整的分类列表在这里http://pypi.python.org/pypi?%3Aaction=list_classifiers.
-For a full list of the possible arguments to ``classifiers``, visit http://pypi.python.org/pypi?%3Aaction=list_classifiers.
+``classifiers``参数, 完整的分类列表在这里 http://pypi.python.org/pypi?%3Aaction=list_classifiers.
 
 
 README / Long Description
@@ -39,7 +36,6 @@ README / Long Description
 
 你可能希望添加一个README说明文件到你的包中, 而且也可以满足PyPI``long_description``的规范. 如果
 这个文件使用reStructuredText语法, 将会有更丰富的格式.
-You'll probably want a README file in your source distribution, and that file can serve double purpose as the ``long_description`` specified to PyPI. Further, if that file is written in reStructuredText, it can be formatted nicely.
 
 **funniest**, 添加两个文件::
 
@@ -65,10 +61,8 @@ You'll probably want a README file in your source distribution, and that file ca
     include README.rst
 
 这个文件是用来告诉setuptools打包的时候把README.rst添加进去, 否则的话只会打包包含Python代码的文件.
-This file is necessary to tell setuptools to include the README.rst file when generating source distributions. Otherwise, only Python files will be included.
 
-到现在``setup.py``修改::
-Now we can use it in setup.py like::
+接下来修改``setup.py``::
 
     from setuptools import setup
 
@@ -99,4 +93,3 @@ Now we can use it in setup.py like::
           zip_safe=False)
 
 当你的代码存放在GitHub或者是BitBucket, README.rst 会自动成为项目的主页.
-When the repo is hosted on GitHub or BitBucket, the README.rst file will also automatically be picked up and used as a 'homepage' for the project.

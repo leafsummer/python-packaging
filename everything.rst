@@ -1,7 +1,7 @@
-我们把所有的东西组合起来
+把所有的东西组合起来
 =======================
 
-Our whole package, for reference, looks like this::
+最后整个Python包, 看起来像这样::
 
     funniest/
         funniest/
@@ -16,7 +16,7 @@ Our whole package, for reference, looks like this::
         setup.py
         .gitignore
 
-Here is the contents of each file:
+每个文件如下:
 
 **funniest/__init__.py**
 
